@@ -9,6 +9,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [x] airbnb eslint & prettier 추가
 - [x] emotion 라이브러리 추가 및 reset css 적용
 - [x] 불필요한 파일, 코드 제거
+- [x] 폴더구조 반영
 
 ## 🗂️폴더 구조
 
