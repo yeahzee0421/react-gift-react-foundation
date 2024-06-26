@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# react-gift-react-foundation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FE 카카오 선물하기 1주차 과제: React 기초
 
-## Available Scripts
+## ✏️요구 사항
 
-In the project directory, you can run:
+- [x] Create React App을 기반의 프로젝트 생성
+- [x] Typescript 및 절대경로 alias 세팅
+- [x] airbnb eslint & prettier 추가
+- [x] emotion 라이브러리 추가 및 reset css 적용
+- [x] 불필요한 파일, 코드 제거
+- [x] 폴더구조 반영
 
-### `npm start`
+## 🗂️폴더 구조
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+📦public
+📦src
+ ┣ 📂assets
+ ┣ 📂components
+ ┃ ┗ 📂common
+ ┣ 📂pages
+ ┣ 📂store
+ ┣ 📂utils
+ ┣ 📜App.css
+ ┣ ...
+ ┗ 📜reportWebVitals.ts
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- assets: 폰트, 이미지 등 프로젝트에 이용되는 다양한 자산들을 저장하는 폴더
+- components: 공통적으로 사용될 수 있는 컴포넌트를 저장하는 폴더
+  - common: 범용적으로 사용되는 컴포넌트를 저장
+- pages: 페이지 단위의 컴포넌트를 저장하는 폴더
+- store: zustand, recoil, redux와 같은 상태 관리 라이브러리 사용 시 관련 파일을 저장하는 폴더
+- utils: 공통적으로 사용하는 함수를 저장하는 폴더
