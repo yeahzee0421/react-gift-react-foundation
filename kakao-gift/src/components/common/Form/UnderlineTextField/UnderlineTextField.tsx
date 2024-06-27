@@ -4,19 +4,20 @@ import React from 'react';
 export interface FieldProps {
   disabled?: boolean;
   invalid?: boolean;
-  size: 'small' | 'large' | 'responsive';
+  size?: 'small' | 'large' | 'responsive';
 }
 
-const Button: React.FC<FieldProps> = ({ disabled, invalid, size }) => (
+const TextField: React.FC<FieldProps> = ({ disabled, invalid, size }) => (
   <input
     className={`input ${disabled} ${invalid} ${size}`}
     placeholder="placeholder"
   />
 );
 
-Button.defaultProps = {
+TextField.defaultProps = {
   disabled: false,
   invalid: false,
+  size: 'responsive',
 };
 
-export default Button;
+export default TextField;
