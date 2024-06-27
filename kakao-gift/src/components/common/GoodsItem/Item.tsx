@@ -10,8 +10,10 @@ export interface ItemProps {
 const Item: React.FC<ItemProps> = ({
   imageSrc, subtitle, title, amount,
 }) => {
-  const boxStyle: React.CSSProperties = { display: 'block', width: '120px', overflow: 'hidden' };
-  const imgStyle: React.CSSProperties = { width: '120px', height: '120px', objectFit: 'cover' };
+  const boxStyle: React.CSSProperties = { display: 'block', width: '160px', overflow: 'hidden' };
+  const imgStyle: React.CSSProperties = {
+    width: '160px', height: '160px', objectFit: 'cover', borderRadius: '5px',
+  };
 
   return (
     <div style={boxStyle}>
