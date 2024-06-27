@@ -26,8 +26,8 @@ export default {
 // eslint-disable-next-line react/jsx-props-no-spreading
 const Template: StoryFn<FieldProps> = (args) => <TextField {...args} />;
 
-export const Field = Template.bind({});
-Field.args = {
+export const Default = Template.bind({});
+Default.args = {
   disabled: false,
   invalid: false,
   size: 'responsive',
