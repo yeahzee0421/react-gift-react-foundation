@@ -1,0 +1,40 @@
+.button {
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 120px;
+  }
+.button.kakao {
+    background-color: #FAE64D;
+    color: black
+}
+.button.default{
+    background-color: white;
+    color: black;
+}
+.button.small {
+    padding: 8px 8px;
+    font-size: 12px;
+}
+
+.button.large {
+    padding: 16px 16px;
+    font-size: 24px;
+}
+.button.responsive {
+    padding: 12px 12px;
+    font-size: 16px;
+  }
+  
+@media (max-width: 480px) {
+    .button.responsive {
+      padding: 12px 12px;
+      font-size: 12px;
+    }
+  }
+@media (max-width: 768px) {
+    .button.responsive {
+        padding: 16px 16px;
+        font-size: 16px;
+    }
+}
