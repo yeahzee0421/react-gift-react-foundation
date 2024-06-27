@@ -6,6 +6,7 @@ import Button, { ButtonProps } from './Button';
 export default {
   title: 'Button',
   component: Button,
+  tags: ['autodocs'],
   argTypes: {
     theme: {
       control: {
