@@ -4,7 +4,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import Image, { ImageProps } from './Image';
 
 export default {
-  title: 'Image',
+  title: 'common/Image',
   component: Image,
   tags: ['autodocs'],
 } as Meta;

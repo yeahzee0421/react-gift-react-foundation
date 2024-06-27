@@ -4,7 +4,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import TextField, { FieldProps } from './UnderlineTextField';
 
 export default {
-  title: 'UnderlineTextField',
+  title: 'Common/Form/Input/UnderlineTextField',
   component: TextField,
   tags: ['autodocs'],
   argTypes: {
