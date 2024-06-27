@@ -14,10 +14,4 @@ const Button: React.FC<ButtonProps> = ({ theme, size, children }) => (
   </button>
 );
 
-Button.defaultProps = {
-  theme: 'kakao',
-  size: 'responsive',
-  children: '',
-};
-
 export default Button;

@@ -16,10 +16,4 @@ const TextField: React.FC<FieldProps> = ({ disabled, invalid, size }) => (
   />
 );
 
-TextField.defaultProps = {
-  disabled: false,
-  invalid: false,
-  size: 'responsive',
-};
-
 export default TextField;
