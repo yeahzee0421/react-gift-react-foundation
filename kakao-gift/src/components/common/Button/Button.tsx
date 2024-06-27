@@ -3,9 +3,9 @@ import React from 'react';
 import './Button.css';
 
 export interface ButtonProps {
-  theme: 'kakao' | 'default';
-  size: 'small' | 'large' | 'responsive';
-  children: React.ReactNode;
+  theme?: 'kakao' | 'default';
+  size?: 'small' | 'large' | 'responsive';
+  children?: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({ theme, size, children }) => (
@@ -13,5 +13,11 @@ const Button: React.FC<ButtonProps> = ({ theme, size, children }) => (
     {children}
   </button>
 );
+
+Button.defaultProps = {
+  theme: 'kakao',
+  size: 'responsive',
+  children: '',
+};
 
 export default Button;
