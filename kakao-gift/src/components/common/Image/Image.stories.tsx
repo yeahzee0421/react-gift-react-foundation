@@ -9,7 +9,6 @@ export default {
   tags: ['autodocs'],
 } as Meta;
 
-// eslint-disable-next-line react/jsx-props-no-spreading
 const Template: StoryFn<ImageProps> = (args) => <Image {...args} />;
 const imageUrl = 'https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png';
 
