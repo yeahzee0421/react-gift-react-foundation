@@ -10,8 +10,9 @@ export interface FieldProps {
 
 const TextField: React.FC<FieldProps> = ({ disabled, invalid, size }) => (
   <input
-    className={`input ${disabled} ${invalid} ${size}`}
+    className={`input ${disabled ? 'disabled' : ''} ${invalid ? 'invalid' : ''} ${size}`}
     placeholder="placeholder"
+    disabled={disabled}
   />
 );
 
