@@ -29,6 +29,13 @@ const RankingItem: React.FC<RankingItemProps> = ({
     marginLeft: '2px',
     marginTop: '2px',
   };
+  if (rankingIndex >= 1 && rankingIndex <= 3) {
+    indexStyle.backgroundColor = '#EC7B6A';
+    indexStyle.color = '#fff';
+  } else {
+    indexStyle.backgroundColor = '#ccc';
+    indexStyle.color = '#000';
+  }
 
   return (
     <div style={containerStyle}>
