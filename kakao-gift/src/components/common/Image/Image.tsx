@@ -43,7 +43,7 @@ const Image: React.FC<ImageProps> = ({
         }
     }
 
-    return <img src={src} style={heightStyle} alt="imageSample" />
+    return <img src={src} style={heightStyle} alt="GoodsItem-Image-Preview" />
 }
 
 export default Image

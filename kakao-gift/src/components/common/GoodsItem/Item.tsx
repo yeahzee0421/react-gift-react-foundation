@@ -26,7 +26,7 @@ const Item: React.FC<ItemProps> = ({ imageSrc, subtitle, title, amount }) => {
                 className="thumbnail"
                 src={imageSrc}
                 style={imgStyle}
-                alt="thumbnail"
+                alt="GoodsItem-Image-Preview"
             />
             <h5 style={{ fontWeight: 'lighter' }}>{subtitle}</h5>
             <h5 style={{ fontWeight: 'lighter', fontSize: '14px' }}>{title}</h5>
