@@ -16,3 +16,19 @@
 .input.invalid {
     border-bottom: 2px solid red;
 }
+.input.small {
+    font-size: 12px;
+}
+.input.large {
+    font-size: 24px;
+}
+@media (max-width: 480px) {
+    .input.responsive {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .input.responsive {
+        font-size: 16px;
+    }
+}

@@ -1,11 +1,11 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Meta, StoryFn } from '@storybook/react'
-import TextField, { FieldProps } from './UnderlineTextField'
+import Input, { InputProps } from './UnderlineTextField'
 
 export default {
     title: 'Common/Form/Input/UnderlineTextField',
-    component: TextField,
+    component: Input,
     tags: ['autodocs'],
     argTypes: {
         disabled: {
@@ -17,17 +17,17 @@ export default {
         size: {
             control: {
                 type: 'select',
-                options: ['small', 'large', 'responsive'],
+                options: ['respoinsive'],
             },
         },
     },
 } as Meta
 
-// eslint-disable-next-line react/jsx-props-no-spreading
-const Template: StoryFn<FieldProps> = (args) => <TextField {...args} />
+const Template: StoryFn<InputProps> = (args) => <Input {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
+    placeholder: 'placeholder',
     disabled: false,
     invalid: false,
     size: 'responsive',
