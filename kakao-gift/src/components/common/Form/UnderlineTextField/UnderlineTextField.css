@@ -1,4 +1,4 @@
-.input{
+.input {
     display: flex;
     width: 100%;
     border-style: none;
@@ -7,12 +7,12 @@
     padding-bottom: 10px;
     font-size: 16px;
 }
-.input:focus{
+.input:focus {
     outline: none;
 }
-.input.disabled{
+.input.disabled {
     background-color: #e7e7e773;
 }
-.input.invalid{
+.input.invalid {
     border-bottom: 2px solid red;
 }
