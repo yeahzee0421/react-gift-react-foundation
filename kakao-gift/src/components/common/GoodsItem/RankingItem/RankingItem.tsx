@@ -1,5 +1,7 @@
 import React from 'react'
 import Item, { ItemProps } from '../Item'
+// import { COLORS } from '@/utils/styles'
+import { COLORS } from '../../../../utils/styles'
 
 export interface RankingItemProps extends ItemProps {
     rankingIndex: number
@@ -24,17 +26,15 @@ const RankingItem: React.FC<RankingItemProps> = ({
         fontSize: '12px',
         fontWeight: 'bolder',
         zIndex: 999,
-        background: '#EC7B6A',
-        color: '#fff',
         marginLeft: '2px',
         marginTop: '2px',
     }
     if (rankingIndex >= 1 && rankingIndex <= 3) {
-        indexStyle.backgroundColor = '#EC7B6A'
-        indexStyle.color = '#fff'
+        indexStyle.backgroundColor = COLORS.top3Color
+        indexStyle.color = COLORS.whiteColor
     } else {
-        indexStyle.backgroundColor = '#ccc'
-        indexStyle.color = '#000'
+        indexStyle.backgroundColor = COLORS.otherRankColor
+        indexStyle.color = COLORS.blackColor
     }
 
     return (
