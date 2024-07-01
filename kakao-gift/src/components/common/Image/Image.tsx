@@ -1,6 +1,6 @@
 import React from 'react'
 
-export interface ImageProps {
+export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
     src?: string
     width?: string
     ratio?: number | 'square'

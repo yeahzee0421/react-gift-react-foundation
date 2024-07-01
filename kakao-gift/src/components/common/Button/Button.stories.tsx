@@ -1,5 +1,5 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { Meta, StoryFn } from '@storybook/react'
 import Button, { ButtonProps } from './Button'
 
@@ -20,21 +20,16 @@ export default {
                 options: ['small', 'large', 'responsive'],
             },
         },
+        onClick: { action: 'clicked' },
     },
 } as Meta
 
 const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />
 
-export const Kakao = Template.bind({})
-Kakao.args = {
+export const Default = Template.bind({})
+Default.args = {
     theme: 'kakao',
     size: 'responsive',
     children: '버튼',
-}
-
-export const Default = Template.bind({})
-Default.args = {
-    theme: 'default',
-    size: 'responsive',
-    children: '버튼',
+    onClick: () => alert('버튼 클릭'),
 }

@@ -1,15 +1,14 @@
-// src/Button.tsx
 import React from 'react'
 import './Button.css'
 
-export interface ButtonProps {
+export interface ButtonProps
+    extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     theme?: 'kakao' | 'default'
     size?: 'small' | 'large' | 'responsive'
-    children?: React.ReactNode
 }
 
-const Button: React.FC<ButtonProps> = ({ theme, size, children }) => (
-    <button className={`button ${theme} ${size}`} type="button">
+const Button: React.FC<ButtonProps> = ({ theme, size, children, ...props }) => (
+    <button className={`button ${theme} ${size}`} type="button" {...props}>
         {children}
     </button>
 )
