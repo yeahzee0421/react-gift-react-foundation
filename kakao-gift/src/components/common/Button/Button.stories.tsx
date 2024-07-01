@@ -1,5 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Meta, StoryFn } from '@storybook/react'
 import Button, { ButtonProps } from './Button'
 
@@ -23,7 +23,6 @@ export default {
     },
 } as Meta
 
-// eslint-disable-next-line react/jsx-props-no-spreading
 const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />
 
 export const Kakao = Template.bind({})
