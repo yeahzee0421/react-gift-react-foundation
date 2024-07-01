@@ -17,7 +17,12 @@ const getRadius = (radius?: number | 'circle'): string | undefined => {
     return undefined
 }
 
-const Image: React.FC<ImageProps> = ({ src, width, ratio, radius }) => {
+const Image: React.FC<ImageProps> = ({
+    src,
+    width = '100px',
+    ratio = 'square',
+    radius = 1,
+}) => {
     let heightStyle: React.CSSProperties = {}
 
     if (ratio === 'square') {

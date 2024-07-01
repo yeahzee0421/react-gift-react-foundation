@@ -9,7 +9,12 @@ export interface InputProps extends Omit<DefaultProps, 'size'> {
     size?: 'large' | 'small' | 'responsive'
 }
 
-const Input: React.FC<InputProps> = ({ disabled, invalid, size, ...props }) => (
+const Input: React.FC<InputProps> = ({
+    disabled = false,
+    invalid = false,
+    size = 'responsive',
+    ...props
+}) => (
     <input
         className={`input ${disabled ? 'disabled' : ''} ${invalid ? 'invalid' : ''} ${size}`}
         disabled={disabled}

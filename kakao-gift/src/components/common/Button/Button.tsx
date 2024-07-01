@@ -7,7 +7,12 @@ export interface ButtonProps
     size?: 'small' | 'large' | 'responsive'
 }
 
-const Button: React.FC<ButtonProps> = ({ theme, size, children, ...props }) => (
+const Button: React.FC<ButtonProps> = ({
+    theme = 'kakao',
+    size = 'responsive',
+    children,
+    ...props
+}) => (
     <button className={`button ${theme} ${size}`} type="button" {...props}>
         {children}
     </button>
