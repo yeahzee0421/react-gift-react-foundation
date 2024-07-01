@@ -4,7 +4,10 @@
         "prettier",
         "eslint:recommended",
         "plugin:prettier/recommended",
+        "plugin:@typescript-eslint/recommended",
     ],
+    // "plugins": ["@typescript-eslint/eslint-plugin"],
+    // "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "project": "[tsconfig.json]",
     },
@@ -18,9 +21,12 @@
     },
 
     "rules": {
+        "prettier/prettier": ["error", { "endOfLine": "auto" }],
         "react/require-default-props": "off",
         "react/react-in-jsx-scope": "off",
         "react/jsx-props-no-spreading": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error",
         "react/jsx-filename-extension": [
             1,
             { "extensions": [".js", ".jsx", ".tsx"] },
